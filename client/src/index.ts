@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { background } from "./assets";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -13,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #303030;
+    background-image: url(${background});
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `;
