@@ -15,6 +15,9 @@ export const Header = () => {
             <li>
               <Link to="/marcas">Marcas</Link>
             </li>
+            <li>
+              <Link to="/formulario">Formulário</Link>
+            </li>
           </ul>
         </nav>
       </div>

@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { api } from "./services/api";
 import { useEffect, useState } from "react";
 import { Car } from "./interfaces";
+import { Form } from "./pages/Form";
 
 export const App = () => {
   const [cars, setCars] = useState<Car[]>([]);
@@ -31,6 +32,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<Home carList={cars} />} />
           <Route path="/marcas" element={<Brand carList={cars} />} />
+          <Route path="formulario" element={<Form />} />
         </Routes>
       </main>
       <Footer />

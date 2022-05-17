@@ -25,6 +25,11 @@ export interface HomeProps {
   carList: Car[];
 }
 
+export interface InputBoxProps {
+  name: string;
+  type: string;
+}
+
 export interface WidgetProps {
   title: string;
   children: any;
