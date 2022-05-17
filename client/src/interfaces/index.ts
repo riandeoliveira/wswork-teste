@@ -1,3 +1,7 @@
+export interface BrandProps {
+  carList: Car[];
+}
+
 export interface Car {
   id: string;
   marca_id: number;
@@ -14,7 +18,7 @@ export interface Car {
 
 export interface CardProps {
   key: number;
-  data: Car;
+  carData: Car;
 }
 
 export interface WidgetProps {
