@@ -23,6 +23,7 @@ export const Card = ({ carData }: CardProps): JSX.Element => {
           <span>Combustível</span>
           <span>{carData.combustivel}</span>
         </div>
+        <h4>R$ {carData.valor_fipe}</h4>
       </S.CarDataBox>
     </S.Card>
   );

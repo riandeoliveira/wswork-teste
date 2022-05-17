@@ -29,7 +29,7 @@ export const App = () => {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home carList={cars} />} />
           <Route path="/marcas" element={<Brand carList={cars} />} />
         </Routes>
       </main>

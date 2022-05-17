@@ -15,7 +15,6 @@ export const Card = styled.div`
   }
 
   img {
-    margin: 10px 0;
     width: 100%;
     height: 180px;
     object-fit: contain;
@@ -36,5 +35,11 @@ export const CarDataBox = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+  }
+
+  h4 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
   }
 `;

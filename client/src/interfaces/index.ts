@@ -21,6 +21,10 @@ export interface CardProps {
   carData: Car;
 }
 
+export interface HomeProps {
+  carList: Car[];
+}
+
 export interface WidgetProps {
   title: string;
   children: any;
