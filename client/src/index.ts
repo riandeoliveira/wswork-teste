@@ -1,3 +1,5 @@
+// Estilos globais do CSS.
+
 import { createGlobalStyle } from "styled-components";
 import { background } from "./assets";
 import fonts from "./themes/fonts";

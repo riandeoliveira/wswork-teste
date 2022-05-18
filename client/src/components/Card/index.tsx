@@ -1,3 +1,5 @@
+// Componente do card de veículos.
+
 import { CardProps } from "../../interfaces";
 import * as S from "./styles";
 

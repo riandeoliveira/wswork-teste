@@ -1,3 +1,5 @@
+// Rodapé do site.
+
 import styled from "styled-components";
 import colors from "../../themes/colors";
 

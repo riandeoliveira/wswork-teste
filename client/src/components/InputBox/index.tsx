@@ -1,3 +1,5 @@
+// Caixa de input para o formulário.
+
 import { InputBoxProps } from "../../interfaces";
 import * as S from "./styles";
 

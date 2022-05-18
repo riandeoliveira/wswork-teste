@@ -1,3 +1,5 @@
+// Cabeçalho do site.
+
 import * as S from "./styles";
 import { AiFillCar } from "react-icons/ai";
 import { Link } from "react-router-dom";

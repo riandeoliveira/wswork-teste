@@ -1,3 +1,5 @@
+// Interfaces TypeScript para tipagem de componentes e páginas.
+
 export interface BrandProps {
   carList: Car[];
 }

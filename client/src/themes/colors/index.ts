@@ -1,3 +1,5 @@
+// Paleta de cores usada na aplicação.
+
 const colors = {
   primary: "#151515",
   primary_light: "#303030",

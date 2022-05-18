@@ -1,3 +1,5 @@
+// Widget para servir como uma seção de cards de veículos.
+
 import { WidgetProps } from "../../interfaces";
 import * as S from "./styles";
 

@@ -1,9 +1,12 @@
+// Formulário para adicionar um novo veículo.
+
 import * as S from "./styles";
 import { InputBox } from "../../components/InputBox";
 import { useState } from "react";
 import { api } from "../../services/api";
 
 export const Form = (): JSX.Element => {
+  // Cada entrada de texto é armazenada em um estado.
   const [brandName, setBrandName] = useState<string>("");
   const [modelName, setModelName] = useState<string>("");
   const [releaseYear, setReleaseYear] = useState<number>(0);
@@ -13,6 +16,7 @@ export const Form = (): JSX.Element => {
   const [image, setImage] = useState<string>("");
   const [fuelType, setFuelType] = useState<string>("");
 
+  // As funções 'handle' preenchem os respectivos estados ao serem chamadas.
   const handleBrandNameChange = (e: any) => setBrandName(e.target.value);
   const handleModelNameChange = (e: any) => setModelName(e.target.value);
   const handleReleaseYearChange = (e: any) => setReleaseYear(e.target.value);
@@ -22,6 +26,7 @@ export const Form = (): JSX.Element => {
   const handleImageChange = (e: any) => setImage(e.target.value);
   const handleFuelTypeChange = (e: any) => setFuelType(e.target.value);
 
+  // Recebe os dados enviados pelo formulário, monta um objeto com os mesmos e chama uma função passando como argumento o objeto.
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
 
@@ -41,6 +46,7 @@ export const Form = (): JSX.Element => {
     sendPostRequest(newCar);
   };
 
+  // Envia os dados para o servidor, cadastrando um novo carro no banco de dados.
   const sendPostRequest = async (postRequest: any) => {
     try {
       await api.post("/", postRequest);

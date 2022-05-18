@@ -1,3 +1,5 @@
+// Arquivo principal do cliente.
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
@@ -11,6 +13,7 @@ import { Form } from "./pages/Form";
 export const App = () => {
   const [cars, setCars] = useState<Car[]>([]);
 
+  // Chama a API e armazena os dados em um estado.
   const getCarsData = async (): Promise<void> => {
     try {
       const { data } = await api.get("/");
@@ -26,6 +29,7 @@ export const App = () => {
   }, []);
 
   return (
+    // Rotas da aplicação.
     <BrowserRouter>
       <Header />
       <main>
