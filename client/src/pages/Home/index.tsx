@@ -14,8 +14,6 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
     order: "asc",
   }).slice(0, 3);
 
-  console.log(latestCars);
-
   return (
     <>
       <Widget title="Novos Carros">
