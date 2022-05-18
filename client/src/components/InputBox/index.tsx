@@ -10,7 +10,12 @@ export const InputBox = ({
   return (
     <S.InputBox>
       <label htmlFor="">{name}</label>
-      <input type={type} placeholder={placeholder} onChange={onChange} />
+      <input
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+        required
+      />
     </S.InputBox>
   );
 };
