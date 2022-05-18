@@ -1,11 +1,16 @@
 import { InputBoxProps } from "../../interfaces";
 import * as S from "./styles";
 
-export const InputBox = ({ name, type }: InputBoxProps): JSX.Element => {
+export const InputBox = ({
+  name,
+  type,
+  placeholder,
+  onChange,
+}: InputBoxProps): JSX.Element => {
   return (
     <S.InputBox>
       <label htmlFor="">{name}</label>
-      <input type={type} />
+      <input type={type} placeholder={placeholder} onChange={onChange} />
     </S.InputBox>
   );
 };

@@ -28,6 +28,8 @@ export interface HomeProps {
 export interface InputBoxProps {
   name: string;
   type: string;
+  placeholder: string;
+  onChange: any;
 }
 
 export interface WidgetProps {
