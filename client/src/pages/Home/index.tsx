@@ -16,18 +16,27 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
 
   return (
     <>
-      <Widget title="Novos Carros">
+      <Widget
+        title="Novos Carros"
+        description="Confira os últimos veículos adicionados no catálogo"
+      >
         {latestCars.map((car: Car, i: number) => (
           <Card key={i} carData={car} />
         ))}
       </Widget>
-      <Widget title="Carros Antigos">
+      <Widget
+        title="Carros Antigos"
+        description="Veículos lançados antes de 2005"
+      >
         {carList.map(
           (car: Car, i: number) =>
             car.ano < 2005 && <Card key={i} carData={car} />
         )}
       </Widget>
-      <Widget title="Carros em Promoção">
+      <Widget
+        title="Carros em Promoção"
+        description="Top 3 veículos mais baratos disponíveis"
+      >
         {cheapestCars.map((car: Car, i: number) => (
           <Card key={i} carData={car} />
         ))}

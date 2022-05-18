@@ -34,5 +34,6 @@ export interface InputBoxProps {
 
 export interface WidgetProps {
   title: string;
+  description?: string;
   children: any;
 }
