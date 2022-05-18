@@ -6,7 +6,7 @@ import sortArray from "sort-array";
 export const Home = ({ carList }: HomeProps): JSX.Element => {
   const latestCars = sortArray([...carList], {
     by: "timestamp_cadastro",
-    order: "asc",
+    order: "desc",
   }).slice(0, 5);
 
   const cheapestCars = sortArray([...carList], {
