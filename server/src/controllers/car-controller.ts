@@ -1,3 +1,5 @@
+// Funções para lidar com requisições GET e POST.
+
 import { Request, Response } from "express";
 import { Car } from "@prisma/client";
 import prisma from "../prisma";

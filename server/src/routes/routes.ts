@@ -1,3 +1,5 @@
+// Rotas do servidor.
+
 import { Router } from "express";
 import { getCars, createCars } from "../controllers/car-controller";
 

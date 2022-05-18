@@ -1,3 +1,5 @@
+// Arquivo do Prisma. Para a conexão com o banco de dados não relacional MongoDB.
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -7,6 +9,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Modelo de dados dos carros adicionados, define o que cada um deve possuir.
 model Car {
   id                 String  @id @default(auto()) @map("_id") @db.ObjectId
   marca_id           Int     @unique

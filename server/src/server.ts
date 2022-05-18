@@ -1,3 +1,5 @@
+// Arquivo principal do backend. Inicia um novo servidor Express.
+
 import express, { Express } from "express";
 import { Port } from "./types";
 import cors from "cors";
