@@ -26,6 +26,7 @@ export const Form = (): JSX.Element => {
     e.preventDefault();
 
     const newCar = {
+      marca_id: 5,
       marca_nome: brandName,
       nome_modelo: modelName,
       ano: Number(releaseYear),
@@ -43,6 +44,8 @@ export const Form = (): JSX.Element => {
   const sendPostRequest = async (postRequest: any) => {
     try {
       await api.post("/", postRequest);
+
+      alert("Carro adicionado com sucesso!");
     } catch (error) {
       console.log(error);
     }
