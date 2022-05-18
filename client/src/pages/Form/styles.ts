@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 
 export const Form = styled.form`
   display: flex;
-  color: white;
-  margin: 20px;
-  background-color: #303030;
+  color: ${colors.neutral};
+  margin: 100px 0;
+  background-color: ${colors.primary_light};
   flex-direction: column;
   padding: 30px;
 

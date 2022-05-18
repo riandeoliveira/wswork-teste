@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 
 export const Card = styled.div`
   width: 300px;
-  color: #6c6c6c;
-  background-color: #151515;
+  color: ${colors.secondary_lightness};
+  background-color: ${colors.primary};
   height: 400px;
   margin: 20px;
   padding: 20px;
@@ -11,7 +12,7 @@ export const Card = styled.div`
 
   h3 {
     font-size: 32px;
-    color: white;
+    color: ${colors.neutral};
   }
 
   img {
@@ -38,7 +39,7 @@ export const CarDataBox = styled.div`
   }
 
   h4 {
-    color: white;
+    color: ${colors.neutral};
     text-align: center;
     font-size: 20px;
   }

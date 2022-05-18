@@ -1,19 +1,20 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 
 export const Footer = styled.footer`
-  background-color: #151515;
+  background-color: ${colors.primary};
   height: 40px;
-  color: white;
+  color: ${colors.neutral};
   display: flex;
   justify-content: center;
   align-items: center;
 
   p {
     a {
-      color: white;
+      color: ${colors.neutral};
 
       &:hover {
-        color: #0074ba;
+        color: ${colors.tertiary};
       }
     }
   }

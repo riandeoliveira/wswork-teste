@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 
 export const Widget = styled.section`
-  background-color: #303030;
+  background-color: ${colors.primary_light};
   margin: 100px 0;
   padding: 20px;
-  color: white;
+  color: ${colors.neutral};
 
   h1 {
     text-align: center;

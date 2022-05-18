@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 
 export const Header = styled.header`
-  background-color: #151515;
+  background-color: ${colors.primary};
   height: 80px;
 
   div {
@@ -13,7 +14,7 @@ export const Header = styled.header`
     max-width: 1200px;
 
     svg {
-      fill: #fe0000;
+      fill: ${colors.secondary};
       height: 50px;
       margin: 0 20px;
       width: 50px;
@@ -32,17 +33,17 @@ export const Header = styled.header`
           margin: 0 20px;
 
           &:hover {
-            border-color: #fe0000;
+            border-color: ${colors.secondary};
           }
 
           a {
             display: flex;
             align-items: center;
-            color: #6c6c6c;
+            color: ${colors.secondary_lightness};
             height: 80px;
 
             &:hover {
-              color: white;
+              color: ${colors.neutral};
             }
           }
         }
