@@ -8,6 +8,8 @@ import { Car, HomeProps } from "../../interfaces";
 import sortArray from "sort-array";
 import Slider from "react-slick";
 
+import settings from "../../services/slider";
+
 export const Home = ({ carList }: HomeProps): JSX.Element => {
   // Ordena a lista de carros para encontrar os top 5 mais recentes.
   const latestCars = sortArray([...carList], {
@@ -20,41 +22,6 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
     by: "valor_fipe",
     order: "asc",
   }).slice(0, 3);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1480,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>

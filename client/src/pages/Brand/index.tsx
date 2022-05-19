@@ -3,45 +3,11 @@ import { useState } from "react";
 import { Widget } from "../../components/Widget";
 import { Card } from "../../components/Card";
 import Slider from "react-slick";
+import settings from "../../services/slider";
 
 export const Brand = ({ carList }: BrandProps): JSX.Element => {
   // Vetor contendo todas as marcas de carros no formato de string (lista de marcas).
   const [carBrands, setCarBrands] = useState<string[]>([]);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 1480,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>
