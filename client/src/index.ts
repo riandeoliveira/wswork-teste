@@ -3,6 +3,8 @@
 import { createGlobalStyle } from "styled-components";
 import { background } from "./assets";
 import fonts from "./themes/fonts";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const GlobalStyle = createGlobalStyle`
   * {

@@ -6,7 +6,7 @@ export const Card = styled.div`
   color: ${colors.secondary_lightness};
   background-color: ${colors.primary};
   height: 400px;
-  margin: 20px;
+  margin: auto;
   padding: 20px;
   border-radius: 20px;
 
