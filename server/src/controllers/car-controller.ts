@@ -8,6 +8,8 @@ export const getCars = async (req: Request, res: Response): Promise<void> => {
   try {
     const cars: Car[] = await prisma.car.findMany();
 
+    console.log(cars);
+
     res.status(200).send(cars);
   } catch (error) {
     console.log(error);
