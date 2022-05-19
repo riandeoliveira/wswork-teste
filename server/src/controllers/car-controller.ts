@@ -5,14 +5,14 @@ import { Car } from "@prisma/client";
 import prisma from "../prisma";
 
 export const getCars = async (req: Request, res: Response): Promise<void> => {
-  console.log(res);
-
   try {
     const cars: Car[] = await prisma.car.findMany();
 
     res.status(200).send(cars);
   } catch (error) {
     console.log(error);
+    console.log(req);
+    console.log(res);
 
     res.status(404).send({
       message: "Não foi possível exibir os carros registrados",
