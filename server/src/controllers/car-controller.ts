@@ -10,9 +10,9 @@ export const getCars = async (req: Request, res: Response): Promise<void> => {
 
     res.status(200).send(cars);
   } catch (error) {
-    console.log(error);
     console.log(req);
     console.log(res);
+    console.log(error);
 
     res.status(404).send({
       message: "Não foi possível exibir os carros registrados",
