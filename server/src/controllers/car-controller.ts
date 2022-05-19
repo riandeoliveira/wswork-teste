@@ -5,10 +5,10 @@ import { Car } from "@prisma/client";
 import prisma from "../prisma";
 
 export const getCars = async (req: Request, res: Response): Promise<void> => {
+  console.log(res);
+
   try {
     const cars: Car[] = await prisma.car.findMany();
-
-    console.log(cars);
 
     res.status(200).send(cars);
   } catch (error) {
