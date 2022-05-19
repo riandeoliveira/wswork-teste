@@ -16,16 +16,6 @@ export const Form = (): JSX.Element => {
   const [image, setImage] = useState<string>("");
   const [fuelType, setFuelType] = useState<string>("");
 
-  // As funções 'handle' preenchem os respectivos estados ao serem chamadas.
-  const handleBrandNameChange = (e: any) => setBrandName(e.target.value);
-  const handleModelNameChange = (e: any) => setModelName(e.target.value);
-  const handleReleaseYearChange = (e: any) => setReleaseYear(e.target.value);
-  const handleDoorsNumberChange = (e: any) => setDoorsNumber(e.target.value);
-  const handlePriceChange = (e: any) => setPrice(e.target.value);
-  const handleColorChange = (e: any) => setColor(e.target.value);
-  const handleImageChange = (e: any) => setImage(e.target.value);
-  const handleFuelTypeChange = (e: any) => setFuelType(e.target.value);
-
   // Recebe os dados enviados pelo formulário, monta um objeto com os mesmos e chama uma função passando como argumento o objeto.
   const handleFormSubmit = (e: any) => {
     e.preventDefault();
@@ -65,25 +55,25 @@ export const Form = (): JSX.Element => {
             name="Nome da marca"
             type="text"
             placeholder="FIAT"
-            onChange={handleBrandNameChange}
+            onChange={(e: any) => setBrandName(e.target.value)}
           />
           <InputBox
             name="Nome do modelo"
             type="text"
             placeholder="Toro"
-            onChange={handleModelNameChange}
+            onChange={(e: any) => setModelName(e.target.value)}
           />
           <InputBox
             name="Ano de lançamento"
             type="number"
             placeholder="2022"
-            onChange={handleReleaseYearChange}
+            onChange={(e: any) => setReleaseYear(e.target.value)}
           />
           <InputBox
             name="Nº de portas"
             type="number"
             placeholder="4"
-            onChange={handleDoorsNumberChange}
+            onChange={(e: any) => setDoorsNumber(e.target.value)}
           />
         </div>
         <div>
@@ -91,25 +81,25 @@ export const Form = (): JSX.Element => {
             name="Preço"
             type="number"
             placeholder="138000"
-            onChange={handlePriceChange}
+            onChange={(e: any) => setPrice(e.target.value)}
           />
           <InputBox
             name="Cor"
             type="text"
             placeholder="Preto"
-            onChange={handleColorChange}
+            onChange={(e: any) => setColor(e.target.value)}
           />
           <InputBox
             name="Imagem"
             type="text"
             placeholder="URL da imagem do veículo"
-            onChange={handleImageChange}
+            onChange={(e: any) => setImage(e.target.value)}
           />
           <InputBox
             name="Tipo de Combustível"
             type="text"
             placeholder="Flex"
-            onChange={handleFuelTypeChange}
+            onChange={(e: any) => setFuelType(e.target.value)}
           />
         </div>
       </div>
