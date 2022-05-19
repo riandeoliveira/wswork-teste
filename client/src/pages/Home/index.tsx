@@ -7,7 +7,6 @@ import { Car, HomeProps } from "../../interfaces";
 // Biblioteca para ordenar vetores de objetos.
 import sortArray from "sort-array";
 import Slider from "react-slick";
-import { Area } from "../../components/Area";
 
 export const Home = ({ carList }: HomeProps): JSX.Element => {
   // Ordena a lista de carros para encontrar os top 5 mais recentes.
@@ -59,7 +58,7 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
 
   return (
     <>
-      <Area
+      <Widget
         title="Novos Carros"
         description="Confira os últimos veículos adicionados no catálogo"
       >
@@ -69,8 +68,8 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
             <Card key={i} carData={car} />
           ))}
         </Slider>
-      </Area>
-      <Area
+      </Widget>
+      <Widget
         title="Carros Antigos"
         description="Veículos lançados antes de 2005"
       >
@@ -81,8 +80,8 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
               car.ano < 2005 && <Card key={i} carData={car} />
           )}
         </Slider>
-      </Area>
-      <Area
+      </Widget>
+      <Widget
         title="Carros em Promoção"
         description="Top 3 veículos mais baratos disponíveis"
       >
@@ -92,7 +91,7 @@ export const Home = ({ carList }: HomeProps): JSX.Element => {
             <Card key={i} carData={car} />
           ))}
         </Slider>
-      </Area>
+      </Widget>
     </>
   );
 };

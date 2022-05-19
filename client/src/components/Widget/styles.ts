@@ -4,20 +4,16 @@ import colors from "../../themes/colors";
 export const Widget = styled.section`
   background-color: ${colors.primary_light};
   margin: 100px 0;
-  padding: 20px;
+  padding: 50px 50px;
   color: ${colors.neutral};
+  width: 100%;
 
   h1 {
     text-align: center;
-    margin-bottom: 20px;
   }
 
   p {
     text-align: center;
+    margin: 20px 0 20px;
   }
-`;
-
-export const CardsBox = styled.div`
-  display: flex;
-  justify-content: center;
 `;

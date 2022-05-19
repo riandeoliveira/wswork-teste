@@ -2,7 +2,6 @@ import { BrandProps, Car } from "../../interfaces";
 import { useState } from "react";
 import { Widget } from "../../components/Widget";
 import { Card } from "../../components/Card";
-import { Area } from "../../components/Area";
 import Slider from "react-slick";
 
 export const Brand = ({ carList }: BrandProps): JSX.Element => {
@@ -58,7 +57,7 @@ export const Brand = ({ carList }: BrandProps): JSX.Element => {
       )}
       {/* Para cada marca de carro, um componente Widget é renderizado contendo o nome dela. */}
       {carBrands.map((carBrand: string, i: number) => (
-        <Area key={i} title={carBrand}>
+        <Widget key={i} title={carBrand}>
           {/**
            * Percorre a lista de carros e verifica:
            * Se a marca da lista de carros for igual a marca da lista de marcas, um Card é adicionado do Widget.
@@ -73,7 +72,7 @@ export const Brand = ({ carList }: BrandProps): JSX.Element => {
                 car.marca_nome === carBrand && <Card key={i} carData={car} />
             )}
           </Slider>
-        </Area>
+        </Widget>
       ))}
     </>
   );
