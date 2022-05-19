@@ -1,45 +1,23 @@
 <div align="center">
-  <img alt="NLW Return ticket" src="https://camo.githubusercontent.com/0919f3447cdf333ab7732118079ce57c8a6abfceedba1e907123bb8e44aedb3e/68747470733a2f2f692e696d6775722e636f6d2f64513550765a482e706e67">
-</div>
-
-<br>
-
-<div align="center">
-  <img alt="Impulse logo" src="https://camo.githubusercontent.com/fb3dfe80e0317c271f3d15312b212f6d475186903c40dbc0fb274de2656feab3/68747470733a2f2f676c6f62616c2d75706c6f6164732e776562666c6f772e636f6d2f3631643833613265626230616530316162393665383431612f3632346635303435326265656339616432363164636164385f6c6f676f2d696d70756c736f2d6e6c772e737667">
-  <div>
-    <h1>Feedback Widget</h1>
-    <span>🚀 Next Level Week #8</span>
-  </div>
+  <h1>Listagem de Carros</h1>
 </div>
 
 ## 📚 Sobre
 
-Widget para o envio de feedbacks de usuários em aplicações web e mobile.
+Catálogo de automóveis separados por seções de acordo com a marca, ano de lançamento, preço, entre outros.
 
 ### 🕹️ Possui as seguintes funcionalidades:
 
-- Escolher um tipo de feedback.
-- Escrever um comentário.
-- Tirar print da tela.
-- Enviar esses dados.
-
-O administrador recebe os dados por e-mail.
-
-### 📝 Nota
-
-Optei por utilizar o banco de dados **MongoDB** ao invés do **SQLite** ou **PostgreSQL** apresentados, para deixar mais alinhado com a minha stack.
+- Navegar através de slides pelos cards de carros.
+- Adicionar um novo carro.
 
 ### 🏗️ Desenvolvimento
 
-Projeto desenvolvido durante a trilha **Impulse** no evento **NLW Return** da [Rocketseat](https://www.rocketseat.com.br/).
-
-## 🔎 Demonstração
-
-<img alt="Application demo GIF" src=".github/demo.gif">
+Projeto desenvolvido como teste proposto pela [WS Work](https://wswork.com.br/).
 
 ## 💻 Como acessar
 
-A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://nlwfidget.vercel.app/).
+A aplicação está hospedada na **Vercel** e pode ser acessada [aqui]().
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -76,11 +54,6 @@ A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://n
         <span>Vite</span>
       </td>
       <td align="center" height="110" width="140">
-        <img alt="Tailwind CSS logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/480px-Tailwind_CSS_Logo.svg.png" title="Tailwind CSS" width="50" />
-        <br>
-        <span>Tailwind CSS</span>
-      </td>
-      <td align="center" height="110" width="140">
         <img alt="TypeScript logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" title="TypeScript" width="50" />
         <br>
         <span>TypeScript</span>
@@ -90,27 +63,10 @@ A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://n
         <br>
         <span>Axios</span>
       </td>
-    </tr>
-    <tr>
       <td align="center" height="110" width="140">
-        <img alt="Autoprefixer logo" height="45" src="https://www.pngkey.com/png/full/952-9528805_autoprefixer-vector-css-autoprefixer.png" title="Autoprefixer" width="60" />
+        <img alt="Styled Components logo" src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4" title="Styled Components" width="50" />
         <br>
-        <span>Autoprefixer</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="PostCSS logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/PostCSS_Logo.svg/790px-PostCSS_Logo.svg.png" title="PostCSS" width="50" />
-        <br>
-        <span>PostCSS</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="Phosphor logo" src="https://raw.githubusercontent.com/phosphor-icons/phosphor-react/HEAD/meta/phosphor-mark-tight-yellow.png" title="Phosphor" width="50" />
-        <br>
-        <span>Phosphor</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="Headless UI logo" src="https://seeklogo.com/images/H/headless-ui-logo-034B045C5C-seeklogo.com.png" title="Headless UI" width="50" />
-        <br>
-        <span>Headless UI</span>
+        <span>Styled Components</span>
       </td>
     </tr>
   </tbody>
@@ -139,11 +95,6 @@ A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://n
     </tr>
     <tr>
       <td align="center" height="110" width="140">
-        <img alt="Jest logo" src="https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png" title="Jest" width="50" />
-        <br>
-        <span>Jest</span>
-      </td>
-      <td align="center" height="110" width="140">
         <img alt="TypeScript logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" title="TypeScript" width="50" />
         <br>
         <span>TypeScript</span>
@@ -152,51 +103,6 @@ A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://n
         <img alt="Prisma logo" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_prisma_icon_130444.png" title="Prisma" width="50" />
         <br>
         <span>Prisma</span>
-      </td>
-    </tr>
-    <tr>
-      <td></td>
-      <td align="center" height="110" width="140">
-        <img alt="Nodemailer logo" height="45" src="https://blog.nodemailer.com/wp-content/uploads/2017/01/cropped-nm_logo_1000x680.png" title="Nodemailer" width="70" />
-        <br>
-        <span>Nodemailer</span>
-      </td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 align="center">📱 Mobile</h3>
-
-<table align="center">
-  <tbody>
-    <tr>
-      <td align="center" height="110" width="140">
-        <img alt="JavaScript logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" width="50" />
-        <br>
-        <span>JavaScript</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="React Native logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" title="React Native" width="50" />
-        <br>
-        <span>React Native</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="TypeScript logo" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" title="TypeScript" width="50" />
-        <br>
-        <span>TypeScript</span>
-      </td>
-    </tr>
-    <tr>
-      <td align="center" height="110" width="140">
-        <img alt="Phosphor logo" src="https://raw.githubusercontent.com/phosphor-icons/phosphor-react/HEAD/meta/phosphor-mark-tight-yellow.png" title="Phosphor" width="50" />
-        <br>
-        <span>Phosphor</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img alt="Expo logo" src="https://logos-download.com/wp-content/uploads/2021/01/Expo_Logo-420x372.png" title="Expo" width="50" />
-        <br>
-        <span>Expo</span>
       </td>
       <td align="center" height="110" width="140">
         <img alt="Axios logo" src="https://avatars.githubusercontent.com/u/32372333?v=4&s=400" title="Axios" width="50" />
@@ -209,6 +115,6 @@ A aplicação está hospedada na **Vercel** e pode ser acessada [aqui](https://n
 
 ## 🚀 Desenvolvido em
 
-06 de mai. de 2022
+19 de mai. de 2022
 
 <p align="center">✨ Made with 💙 by <a href="https://github.com/riandeoliveira"><strong>Rian Oliveira</strong></a> ✨</p>
