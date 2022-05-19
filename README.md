@@ -15,10 +15,6 @@ Catálogo de automóveis separados por seções de acordo com a marca, ano de la
 
 Projeto desenvolvido como teste proposto pela [WS Work](https://wswork.com.br/).
 
-## 💻 Como acessar
-
-A aplicação está hospedada na **Vercel** e pode ser acessada [aqui]().
-
 ## 🛠️ Tecnologias utilizadas
 
 <h3 align="center">🖥️ Front-End</h3>
